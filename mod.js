@@ -1,4 +1,4 @@
-import { Html5Entities as htmlEntities } from "https://deno.land/x/html_entities@v1.0/mod.js";
+// import { Html5Entities as htmlEntities } from "https://deno.land/x/html_entities@v1.0/mod.js";
 import bpeVocabData from "./bpe_simple_vocab_16e6.mjs";
 // import ftfy from "https://deno.land/x/ftfy_pyodide@v0.1.1/mod.js";
 
@@ -57,7 +57,7 @@ function getPairs(word) {
 
 function basicClean(text) {
   // text = ftfy.fix_text(text);
-  text = htmlEntities.decode(htmlEntities.decode(text));
+  // text = htmlEntities.decode(htmlEntities.decode(text));
   return text.trim();
 }
 
